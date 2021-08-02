@@ -66,39 +66,118 @@ body{
     background-color: rgb(240, 237, 237);
 }
 
-.menu-icon{
+.menu-icon {
     padding: 0px 15px;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.menu-icon:hover{
+.menu-icon:hover {
     cursor: pointer;
     background-color: lightgrey;
 }
 
-.font-family-selector{
+.font-family-selector {
     width: 200px;
 }
 
-.selector{
+.selector {
     border: 1px solid black;
     font-size: 18px;
     height: 30px;
 }
 
-.formula-bar{
+.formula-bar {
     height: 6vh;
     /* border: 4px solid brown; */
 }
 
-.data-container{
+.data-container {
     height: 74vh;
+    display: flex;
+    flex-wrap: wrap;
     /* border: 4px solid pink; */
 }
 
-.sheet-bar{
+.select-all {
+    height: 30px;
+    width: 30px;
+    /* background-color: lightgray; */
+    border: 1px solid lightgray;
+    /* border: 2px solid green; */
+}
+
+.column-name-container {
+    width: calc(100vw - 30px);
+    height: 30px;
+    border: 1px solid lightgray;
+    /* background-color: lightgray; */
+}
+
+.row-name-container {
+    width: 30px;
+    border: 1px solid lightgray;
+    /* background-color: lightgray; */
+    height: calc(75vh - 30px);
+}
+
+.input-cell-container {
+    border: 1px solid lightgray;
+    width: calc(100vw - 30px);
+    height: calc(75vh - 30px);
+}
+
+.sheet-bar {
     height: 4vh;
+    display: flex;
+    align-items: center;
     /* border: 4px solid lightskyblue; */
+}
+
+.scroller {
+    width: 90px;
+    display: flex;
+}
+
+.icon-left-scroll, .icon-right-scroll {
+    font-size: 30px;
+    padding: 0px 5px;
+    height: 100%;
+}
+
+.icon-left-scroll:hover, .icon-right-scroll:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.icon-add {
+    color: #207347;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-add:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    transform: scale(1.2);
+}
+
+.sheet-tab-container {
+    border: 2px solid lightgrey;
+    width: calc(100vw - 140px) ;
+}
+
+.sheet-tab {
+    border-bottom: 3px solid #207347;
+    border-right: 2px solid lightgrey;
+    padding: 0px 5px;
+    width: 80px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.sheet-tab:hover {
+    cursor: pointer;
 }
